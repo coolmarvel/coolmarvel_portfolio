@@ -58,10 +58,10 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Amusement Arcade Token(AAT)</h2>
+            <h2>MimiCoin</h2>
             <ol>
               <li><a href="./index.html">Home</a></li>
-              <li>Amusement Arcade Token(AAT)</li>
+              <li>MimiCoin</li>
             </ol>
           </div>
         </div>
@@ -76,15 +76,19 @@
               <div class="portfolio-details-slider swiper-container">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="./assets/img/portfolio/aat2.png" alt="" />
+                    <img src="./assets/img/portfolio/mimicoin1.png" alt="" />
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="./assets/img/portfolio/aat3.png" alt="" />
+                    <img src="./assets/img/portfolio/mimicoin2.png" alt="" />
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="./assets/img/portfolio/aat4.png" alt="" />
+                    <img src="./assets/img/portfolio/mimicoin3.png" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/img/portfolio/mimicoin4.png" alt="" />
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -93,37 +97,20 @@
 
             <div class="col-lg-4">
               <div class="portfolio-info">
-                <h3>팀 프로젝트</h3>
+                <h3>개인 프로젝트</h3>
                 <ul>
+                  <li><strong>프로젝트명</strong>: Mimicoin(미미 알트코인)</li>
+                  <li><strong>서버 네트워크</strong>: WSL(로컬) 배포안함.</li>
+                  <li><strong>빌드 기반</strong>: Bitcoin 계열의 Litecoin</li>
+                  <li><strong>계획</strong>: 기획 1일 / 제작 4일</li>
                   <li>
-                    <strong>프로젝트명</strong>: BEP-20 기반 Amusement Arcade
-                    Token
+                    <strong>프로젝트 일정</strong>: 2021/10/07 ~ 2021/10/15
                   </li>
-                  <li><strong>네트워크</strong>: BSC Testnet Network</li>
-                  <li><strong>사용언어</strong>: Solidity</li>
-                  <li><strong>제작</strong>: 3일</li>
+                  <!-- <li><strong>Project URL</strong>: <a href="http://132.226.224.160:3000/">사이트 바로가기</a></li> -->
                   <li>
-                    <strong>프로젝트 일정</strong>: 2022/03/26 ~ 2022/03/30
-                  </li>
-                  <!-- <li>
-                    <strong>bscscan URL</strong>:
-                    <a
-                      href="https://testnet.bscscan.com/address/0xA7E35205ebEa535115EDCd907B2441fBce67a59d"
-                      >사이트 바로가기</a
-                    >
-                  </li> -->
-                  <li>
-                    <strong>Contract URL</strong>:
-                    <a
-                      href="https://testnet.bscscan.com/address/0xA7E35205ebEa535115EDCd907B2441fBce67a59d"
-                      >사이트 바로가기</a
-                    >
-                  </li>
-                  <li>
-                    <strong>GitHub URL</strong>:
-                    <a
-                      href="https://github.com/NamingCenter/play-to-earn/blob/main/contracts/AmusementArcadeToken.sol"
-                      >깃허브 바로가기</a
+                    <strong>Blog URL</strong>:
+                    <a href="https://saranghaeo.tistory.com/88?category=1026880"
+                      >블로그 바로가기</a
                     >
                   </li>
                 </ul>
@@ -131,19 +118,18 @@
               <div class="portfolio-description">
                 <h2>구현 기술</h2>
                 <p>
-                  - openzeppelin 활용 -<br />
-                  발행<br />
-                  - 토큰 이름 : Amusement Arcade Token<br />
-                  - 토큰 기호 : AAT<br />
-                  - 토큰 decimals : 18<br />
-                  - 토큰 발행량 : 1억개<br />
-                  권한<br />
-                  - 소각권한(BURN)<br />
-                  - 생성권한(MINT)<br />
-                  토큰 전송<br />
-                  - 일반유저 전송과 관리자 전용 전송 구별<br />
-                  Staking<br />
-                  - Staking AAT로 매일 1% 수익
+                  - Litecoin 기반 알트코인 제작 -<br />
+                  1. Litecoin 0.15 version 빌드<br />
+                  2. chainparams.cpp 제네시스 블록 및 해쉬 수정<br />
+                  3. amount.h 코인 발행량 84000000개 조정<br />
+                  4. consensus.h 코인 초기 사용가능량 2로 조정<br />
+                  5. qt -> icons 아이콘들 Timocoin으로 사진 수정<br />
+                  6. contrib -> seeds 네트워크 노드 변경<br />
+                  7. doc -> man 파일 이름 변경<br />
+                  8. chainparams.cpp<br />
+                  난이도<br />
+                  consensus.nPowTargetTimespan = 1.75 * 24 * 60 * 60;<br />
+                  consensus.nPowTargetSpacing = 1.25 * 60; 로 수정<br />
                 </p>
               </div>
             </div>
